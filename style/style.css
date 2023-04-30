@@ -1,0 +1,586 @@
+
+
+.margin-right-sm {
+  margin-right: 1.6rem;
+}
+.container {
+  max-width: 122rem;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  background-color: #fae5d3;
+  padding: 0rem 4.8rem;
+  position: relative;
+}
+.omnifood-logo {
+  height: 2.2rem;
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.main-nav-link:hover, .main-nav-link:active {
+  color: #c96e1f;
+}
+.main-nav-link.nav-cta {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+  
+}
+.main-nav-link.nav-cta:hover {
+  color: #000;
+}
+.btn-mobile-nav {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+/* Sticky */
+.sticky .header{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+.sticky main .section-hero{
+  margin-top: 9.6rem;
+}
+
+/* .icon-mobile-nav[name="menu-outline"]{
+  display: none;
+} */
+.icon-mobile-nav[name="close-outline"]{
+  display: none;
+}
+/* Hero Section */
+.section-hero {
+  background-color: #fae5d3;
+  height: 89vh;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  align-items: center;
+  gap: 9.6rem;
+}
+.hero-img {
+  width: 100%;
+}
+.section-hero-text {
+  align-content: center;
+}
+.secondary-heading, .section-hero-text-heading, .heading-tertiary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #333;
+}
+.secondary-heading {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  letter-spacing: 1.2;
+  margin-bottom: 9.6rem;
+}
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+.heading-tertiary {
+  line-height: 1.2;
+  font-size: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.section-hero-text-heading {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #333;
+  font-size: 5.5rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+.section-hero-text-desc {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+/* Featured */
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #999;
+}
+.section-featured {
+  padding: 4.8rem 0;
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+.logos img {
+  height: 3.2rem;
+  filter: grayscale(100%);
+  opacity: 50%;
+}
+
+/* Section How */
+.section-how {
+  padding: 9.6rem 0;
+  /* background-color: ; */
+}
+.step-number {
+  font-size: 9.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.step-img-box::before {
+  content: '';
+  display: block;
+  width: 60%;
+  padding-bottom: 60%;
+  /* height: 100%; */
+  background-color: #f9f2e8;
+  position: absolute;
+  z-index: -2;
+  border-radius: 50%;
+}
+.step-img-box::after {
+  content: '';
+  display: block;
+  width: 45%;
+  padding-bottom: 45%;
+  /* height: 100%; */
+  background-color: #fae5d3;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+.step-img {
+  width: 35%;
+}
+.step-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Meals section */
+.secton-meals {
+  padding: 9.6rem 0;
+}
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.meal-card{
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all .1s linear;
+}
+.meal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+.meal-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+.meal-card-tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+.meal-card-tag--vegetarian {
+  background-color: #51cf66;
+}
+.meal-card-tag--vegan {
+  background-color: #94d82d;
+}
+.meal-card-tag--paleo {
+  background-color: #ffd43b;
+}
+.meal-atributes {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-atribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-of-diet__item {
+  font-size: 1.8rem;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+.list-item-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+.all-recipies {
+  margin-top: 4.8rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.all-recipies a {
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+.all-recipies a:hover {
+  color: #cf711f;
+}
+.section-testimonials {
+  background-color: #f9f2e8;
+}
+.section-testimonials.grid-template {
+  row-gap: 0;
+}
+.section-testimonials__inner {
+  margin-top: 9.6rem;
+  padding: 0 9.6rem 9.6rem 9.6rem;
+}
+.testimonials {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  gap: 4.8rem;
+  align-items: center;
+  /* column-gap: ; */
+}
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+}
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testimonial-author {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 0 1rem;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-item img {
+  transition: all .2s linear;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+/* section pricing */
+.section-pricing {
+  margin: 9.6rem 0;
+  /* padding-bottom: 4.8rem; */
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.pricing-plan {
+ border-radius: 11px;
+ padding: 4.8rem;
+ width: 65%;
+ border: 1px solid #fdf2e9;
+ position: relative;
+ overflow: hidden;
+}
+.section-pricing .grid-template .pricing-plan:first-child {
+  justify-self: end;
+}
+.section-pricing .grid-template .pricing-plan:first-child .list .list-of-diet__item:last-child {
+  color: transparent;
+}
+.section-pricing .grid-template .pricing-plan:last-child::after{
+  position: absolute;
+  top: 5%;
+  right: -23%;
+  content: "Best value";
+  text-transform: uppercase;
+  background-color: #ffd43b;
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 0.8rem 8rem;
+  color: #333;
+  transform: rotate(45deg);
+}
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;   
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.plan-sign-up {
+  margin-top: 4.8rem;
+}
+.pricing-plan-complete {
+  background-color: #fdf2e9;
+}
+.features {
+  margin-top: 9.6rem;
+}
+.feature-icon {
+  color: #e67e22;
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-bottom: 3.2rem;
+  background-color: #fdf2e9;
+  padding: 1.8rem;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6ren;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+/* Cta section */
+.section-cta {
+  padding: 9.6rem 0 12rem;
+}
+.cta {
+  /* height: 50rem; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right, #eb984e, #e67e22);
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.cta-text-box {
+  padding: 6.4rem;
+  color: #2e1907;
+}
+.cta .secondary-heading {
+  color: #2e1907;
+  margin-bottom: 3.2rem;
+} 
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8 ;
+  margin-bottom: 4.8rem;
+}
+.cta-img-box {
+  background-image: linear-gradient(to right, rgba(235, 151, 78, 0.2), rgba(230, 125, 34, 0.2)),url('../img/eating.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label{
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input, .cta-form select{
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: inherit;
+}
+.cta-form input::placeholder {
+  color: #aaa;
+}
+.cta-form select{
+
+}
+.btn-form {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  background-color: #45260a;
+  align-self: end;
+  padding: 1.2rem;
+  width: 100%;
+}
+.btn-form:hover {
+  color: #333;
+  font-family: inherit;
+  background-color: #fff;
+}
+/* Footer */
+.footer {
+  padding: 12rem 0;
+  border-top: 1px solid #ddd;
+}
+.grid-footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.footer-nav {
+  list-style: none;
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all .3s;
+
+}
+.footer-link:hover {
+  color: #555;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  padding-left: 0;
+}
+.omnifood-logo {
+  display: block;
+}
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #767676;
+}
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.contacts-address {
+  margin-bottom: 2.4rem;
+}
